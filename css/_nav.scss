@@ -1,0 +1,35 @@
+.navSection{
+    width: 100%;
+    background-color: #155bd5;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 100;
+    a{
+        color: #f5f5f5;
+    }
+    .imageDiv{
+        width: 25%;
+        img{
+            width: 100%;
+        }
+    }
+    ul li{
+        margin-left: 25px;
+        a{
+            font-size: 1rem;
+            font-weight: 500;
+            color: #e0e0e0ad;
+            margin-top: 9px;
+        }
+    }
+    .navCon{
+        height: 30px;
+        width: 30px;
+        font-size: 1.3rem;
+        border-radius: 50%;
+        border: 1px solid rgba(238,238,238,.425);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

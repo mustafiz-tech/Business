@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
+// ---------------- common classes ---------------
+
+.container{
+    width: 70%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.df{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.twoDivs{
+    width: 47%
+}
+
+.threeDivs{
+    width: 32%;
+}
+
+// -------------------  My extends  -------------------
+
+%paraExtend{
+    color: #6d6d6d;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+%head2Extend{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin: 10px 0;
+}
+%head4Extend{
+    padding: 5px 20px;
+    font-size: 1rem;
+    display: inline-block;
+    color: #155bd5;
+    border: 1.5px solid #155bd5;
+    border-radius: 25px;
+}
+
+
+// ----------  import all section  -----------
+
+
+@import "nav";
+@import "banner";
+@import "first";
+@import "second";
+@import "third";
+
+
+

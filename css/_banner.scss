@@ -1,0 +1,51 @@
+.bannerSection{
+    width: 100%;
+    padding: 100px 0 60px ;
+    background-color: #155bd5;
+    .twoDivs{
+        h1{
+            color: #fff;
+            font-weight: 700;
+            font-size: 2.8rem;
+            margin-top: 80px;
+        }
+        p{
+            font-size: 1.1rem;
+            color: #e0e0e0ad;
+            font-weight: 500;
+            line-height: 1.5rem;
+            padding: 25px 0;
+        }
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .button{
+            width: 100%;
+            .getStarted{
+                padding: 10px 15px;
+                background-color: #fff;
+                color: #155bd5;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border-radius: 5px;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+            .watchIntro{
+                i{
+                    padding: 12px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    color: #155bd5;
+                }
+                span{
+                    color: #fff;
+                    font-weight: 600;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+}

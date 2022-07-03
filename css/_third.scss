@@ -1,0 +1,24 @@
+.thirdSection{
+    width: 100%;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 70px 0;
+    h4{
+        @extend %head4Extend;
+    }
+    h2{
+        @extend %head2Extend;
+    }
+    p{
+        @extend %paraExtend;
+        padding: 0 450px;
+        margin-bottom: 50px;
+    }
+    .introImg{
+        width: 70%;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+}

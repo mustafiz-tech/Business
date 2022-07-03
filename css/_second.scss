@@ -1,0 +1,45 @@
+.secondSection{
+    width: 100%;
+    text-align: center;
+    padding: 70px 0;
+    h4{
+        @extend %head4Extend;
+    }
+    h2{
+        @extend %head2Extend;
+    }
+    p{
+        @extend %paraExtend;
+        padding: 0 450px;
+        margin-bottom: 30px;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .threeDivs{
+        text-align: left;
+        border: 1px solid #efefef;
+        border-radius: 8px;
+        padding: 35px 20px;
+        margin-bottom: 20px;
+        .iconImg{
+            height: 50px;
+            width: 50px;
+            padding: 5px;
+            border-radius: 50%;
+            border: 1.4px solid #155bd5;
+            img{
+                width: 100%;
+                color: #fff;
+            }
+        }
+        p{
+            padding: 0;
+        }
+        h3{
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+    }
+}

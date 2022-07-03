@@ -1,0 +1,57 @@
+.firstSection{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #fafafa;
+    .twoDivs{
+        img{
+            width: 100%;
+        }
+        h4{
+            text-transform: uppercase;
+            color: #1d1d1d;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            padding-left: 20px;
+            position: relative;
+        }
+        h4:before{
+            content: '';
+            height: 1px;
+            width: 15px;
+            position: absolute;
+            background-color: #155bd5;
+            left: 0;
+            top: 50%;
+
+        }
+        h2{
+            @extend %head2Extend;
+            padding: 20px 0;
+        }
+        nav{
+            background-color: #efefef;
+            padding: 10px;
+            border-radius: 5px;
+            a{
+               padding: 10px;
+               background-color: #fff;
+               margin-right: 10px;
+               border-radius: 3px;
+               color: #2d2d2d;
+               font-weight: 600;
+               text-transform: capitalize;
+               
+            }
+            .WhoWeAre{
+                background-color: #155bd5;
+                color: #fff
+            }
+        }
+        p{
+            @extend %paraExtend;
+            margin: 15px 0;
+        }
+    }
+}

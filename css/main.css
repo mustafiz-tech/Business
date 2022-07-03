@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 70%;
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.df {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.twoDivs {
+  width: 47%;
+}
+
+.threeDivs {
+  width: 32%;
+}
+
+.thirdSection p, .secondSection p, .firstSection .twoDivs p {
+  color: #6d6d6d;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+.thirdSection h2, .secondSection h2, .firstSection .twoDivs h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1d1d1d;
+  margin: 10px 0;
+}
+
+.thirdSection h4, .secondSection h4 {
+  padding: 5px 20px;
+  font-size: 1rem;
+  display: inline-block;
+  color: #155bd5;
+  border: 1.5px solid #155bd5;
+  border-radius: 25px;
+}
+
+.navSection {
+  width: 100%;
+  background-color: #155bd5;
+  padding: 15px 0;
+  position: fixed;
+  z-index: 100;
+}
+.navSection a {
+  color: #f5f5f5;
+}
+.navSection .imageDiv {
+  width: 25%;
+}
+.navSection .imageDiv img {
+  width: 100%;
+}
+.navSection ul li {
+  margin-left: 25px;
+}
+.navSection ul li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(224, 224, 224, 0.6784313725);
+  margin-top: 9px;
+}
+.navSection .navCon {
+  height: 30px;
+  width: 30px;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  border: 1px solid rgba(238, 238, 238, 0.425);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerSection {
+  width: 100%;
+  padding: 100px 0 60px;
+  background-color: #155bd5;
+}
+.bannerSection .twoDivs h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-top: 80px;
+}
+.bannerSection .twoDivs p {
+  font-size: 1.1rem;
+  color: rgba(224, 224, 224, 0.6784313725);
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 25px 0;
+}
+.bannerSection .twoDivs img {
+  width: 100%;
+  border-radius: 5px;
+}
+.bannerSection .twoDivs .button {
+  width: 100%;
+}
+.bannerSection .twoDivs .button .getStarted {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #155bd5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.bannerSection .twoDivs .button .watchIntro i {
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #155bd5;
+}
+.bannerSection .twoDivs .button .watchIntro span {
+  color: #fff;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.firstSection {
+  width: 100%;
+  padding: 70px 0;
+  background-color: #fafafa;
+}
+.firstSection .twoDivs img {
+  width: 100%;
+}
+.firstSection .twoDivs h4 {
+  text-transform: uppercase;
+  color: #1d1d1d;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  padding-left: 20px;
+  position: relative;
+}
+.firstSection .twoDivs h4:before {
+  content: "";
+  height: 1px;
+  width: 15px;
+  position: absolute;
+  background-color: #155bd5;
+  left: 0;
+  top: 50%;
+}
+.firstSection .twoDivs h2 {
+  padding: 20px 0;
+}
+.firstSection .twoDivs nav {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 5px;
+}
+.firstSection .twoDivs nav a {
+  padding: 10px;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: #2d2d2d;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.firstSection .twoDivs nav .WhoWeAre {
+  background-color: #155bd5;
+  color: #fff;
+}
+.firstSection .twoDivs p {
+  margin: 15px 0;
+}
+
+.secondSection {
+  width: 100%;
+  text-align: center;
+  padding: 70px 0;
+}
+.secondSection p {
+  padding: 0 450px;
+  margin-bottom: 30px;
+}
+.secondSection .container {
+  flex-wrap: wrap;
+}
+.secondSection .threeDivs {
+  text-align: left;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  padding: 35px 20px;
+  margin-bottom: 20px;
+}
+.secondSection .threeDivs .iconImg {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1.4px solid #155bd5;
+}
+.secondSection .threeDivs .iconImg img {
+  width: 100%;
+  color: #fff;
+}
+.secondSection .threeDivs p {
+  padding: 0;
+}
+.secondSection .threeDivs h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.thirdSection {
+  width: 100%;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 70px 0;
+}
+.thirdSection p {
+  padding: 0 450px;
+  margin-bottom: 50px;
+}
+.thirdSection .introImg {
+  width: 70%;
+  margin: 0 auto;
+}
+.thirdSection .introImg img {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
