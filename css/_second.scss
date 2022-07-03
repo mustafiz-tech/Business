@@ -10,7 +10,7 @@
     }
     p{
         @extend %paraExtend;
-        padding: 0 450px;
+        padding: 0 650px;
         margin-bottom: 30px;
     }
     .container{
@@ -23,9 +23,9 @@
         padding: 35px 20px;
         margin-bottom: 20px;
         .iconImg{
-            height: 50px;
-            width: 50px;
-            padding: 5px;
+            height: 75px;
+            width: 75px;
+            padding: 10px;
             border-radius: 50%;
             border: 1.4px solid #155bd5;
             img{

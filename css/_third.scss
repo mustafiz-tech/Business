@@ -11,14 +11,33 @@
     }
     p{
         @extend %paraExtend;
-        padding: 0 450px;
+        padding: 0 650px;
         margin-bottom: 50px;
     }
-    .introImg{
-        width: 70%;
-        margin: 0 auto;
-        img{
-            width: 100%;
+    .container{
+        position: relative;
+        .introImg{
+            width: 70%;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .playIcon{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            background-color: #155bd5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.7rem;
         }
     }
+
 }
