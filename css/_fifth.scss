@@ -1,5 +1,5 @@
 .fifthSection{
-    text-align: center;
+    @extend %sectionExtend;
     padding: 80px 0;
     color: #6d6d6d;
     background-color: #fafafa;

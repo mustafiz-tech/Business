@@ -1,0 +1,66 @@
+footer{
+    padding: 80px 0;
+    .container{
+        .fourDivsImg{
+            width: 25%;
+            img{
+                width: 60%;
+            }
+            .making{
+                padding-top: 10px;
+                @extend %paraExtend;
+            }
+            .making2{
+                margin-top: 30px;
+                @extend %paraExtend;
+                span{
+                    display: block;
+                }
+                a{
+                    color: #155bd5;
+                }
+            }
+        }
+        .fourDiv{
+            h2{
+                font-size: 1.3rem;
+                color: #1d1d1d;
+                margin-bottom: 30px;
+            }
+            p{
+                @extend %paraExtend;
+                margin-bottom: 12px;
+            }
+        }
+        .subscribe{
+            width: 30%;
+            form{
+                position: relative;
+                width: 100%;
+                input{
+                    width: 100%;
+                    padding: 18px 18px;
+                    border-radius: 8px;
+                    margin-bottom: 25px;
+                    border: 1px solid #e0e0e0;
+                    outline: none;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    margin-top: 10px;
+                }
+                button{
+                    padding: 13px 14PX;
+                    font-size: 1rem;
+                    border-radius: 8px;
+                    background-color: #155bd5;
+                    border: none;
+                    color: #fff;
+                    position: absolute;
+                    right: 10px;
+                    top: 17px;
+                }
+            }
+        }
+    }
+}

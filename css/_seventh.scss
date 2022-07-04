@@ -1,0 +1,30 @@
+.seventhSection{
+    @extend %sectionExtend;
+    padding: 80px 0;
+    background-image: url(../img/png/overlay.png);
+    background-size: cover;
+    background-color: #155bd5;
+    h2{
+        @extend %head2Extend;
+        color: #fff;
+        padding: 0 650px;
+        font-weight: 600;
+    }
+    p{
+        @extend %paraExtend;
+        color: #fff;
+        padding: 0 650px;
+        margin: 30px 0;
+    }
+    a{
+        padding: 10px 30px;
+        background-color: #155bd5;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: #fff;
+        border: 1.3px solid #fff;
+        border-radius: 5px;
+    }
+}

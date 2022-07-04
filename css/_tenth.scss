@@ -1,0 +1,39 @@
+.tenthSection{
+    @extend %sectionExtend;
+    padding: 80px 0;
+    background-color: #fafafa;
+    h4{
+        @extend %head4Extend;
+    }
+    h2{
+        @extend %head2Extend;
+    }
+    p{
+        @extend %paraExtend;
+        padding: 0 650px;
+    }
+    .container{
+        margin-top: 80px;
+        .main{
+            width: 54.5%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            .image{
+                height: 120px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 40px 20px;
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+                border: 1px solid #eee;
+                margin: 13px 10px;
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

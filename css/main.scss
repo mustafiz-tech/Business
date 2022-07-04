@@ -45,7 +45,10 @@ ul{
 }
 
 // -------------------  My extends  -------------------
-
+%sectionExtend{
+    width: 100%;
+    text-align: center;
+}
 %paraExtend{
     color: #6d6d6d;
     font-size: 1.1rem;
@@ -78,3 +81,9 @@ ul{
 @import "fourth";
 @import "fifth";
 @import "sixth";
+@import "seventh";
+@import "eight";
+@import "nineth";
+@import "tenth";
+@import "eleventh";
+@import "footer";

@@ -1,6 +1,5 @@
 .secondSection{
-    width: 100%;
-    text-align: center;
+    @extend %sectionExtend;
     padding: 70px 0;
     h4{
         @extend %head4Extend;

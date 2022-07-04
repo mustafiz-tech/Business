@@ -1,0 +1,56 @@
+.ninethSection{
+    @extend %sectionExtend;
+    padding: 80px 0;
+    h4{
+        @extend %head4Extend;
+    }
+    h2{
+        @extend %head2Extend;
+    }
+    p{
+        @extend %paraExtend;
+        padding: 0 650px;
+        margin-bottom: 80px;
+    }
+    .threeDivs{
+        text-align: left;
+        .image{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                border-radius: 5px;
+            }
+            .timNorton{
+                width: 150px;
+                height: 40px;
+                display: flex;
+                background-color: #155bd5;
+                padding: 8px 8px;
+                border-radius: 25px;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                img{
+                    width: 20%;
+                    border-radius: 50%;
+                }
+                span{
+                    font-size: 0.7rem;
+                    margin: 5px 0 0 15px;
+                    color: #fff;
+                }
+            }
+        }
+        h3{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1d1d1d;
+            margin: 25px 0;
+        }
+        p{
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+}

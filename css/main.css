@@ -45,20 +45,25 @@ ul {
   width: 32%;
 }
 
-.sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs p {
+.tenthSection, .ninethSection, .eightSection, .seventhSection, .sixthSection, .fifthSection, .fourthSection, .thirdSection, .secondSection {
+  width: 100%;
+  text-align: center;
+}
+
+footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs p {
   color: #6d6d6d;
   font-size: 1.1rem;
   line-height: 1.6rem;
 }
 
-.sixthSection h2, .fifthSection h2, .fourthSection h2, .thirdSection h2, .secondSection h2, .firstSection .twoDivs h2 {
+.tenthSection h2, .ninethSection h2, .eightSection h2, .seventhSection h2, .sixthSection h2, .fifthSection h2, .fourthSection h2, .thirdSection h2, .secondSection h2, .firstSection .twoDivs h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #1d1d1d;
   margin: 15px 0;
 }
 
-.sixthSection h4, .fifthSection h4, .fourthSection h4, .thirdSection h4, .secondSection h4 {
+.tenthSection h4, .ninethSection h4, .eightSection h4, .sixthSection h4, .fifthSection h4, .fourthSection h4, .thirdSection h4, .secondSection h4 {
   padding: 7px 25px;
   font-size: 1rem;
   display: inline-block;
@@ -170,6 +175,7 @@ ul {
   margin-top: 40px;
   padding-left: 20px;
   position: relative;
+  border: none;
 }
 .firstSection .twoDivs h4:before {
   content: "";
@@ -202,12 +208,11 @@ ul {
   color: #fff;
 }
 .firstSection .twoDivs p {
+  padding: 0 0;
   margin: 15px 0;
 }
 
 .secondSection {
-  width: 100%;
-  text-align: center;
   padding: 70px 0;
 }
 .secondSection p {
@@ -245,8 +250,6 @@ ul {
 }
 
 .thirdSection {
-  width: 100%;
-  text-align: center;
   background-color: #fafafa;
   padding: 70px 0;
 }
@@ -281,8 +284,6 @@ ul {
 }
 
 .fourthSection {
-  width: 100%;
-  text-align: center;
   padding: 80px 0;
 }
 .fourthSection p {
@@ -353,7 +354,6 @@ ul {
 }
 
 .fifthSection {
-  text-align: center;
   padding: 80px 0;
   color: #6d6d6d;
   background-color: #fafafa;
@@ -444,9 +444,7 @@ ul {
 }
 
 .sixthSection {
-  width: 100%;
   padding: 80px 0;
-  text-align: center;
 }
 .sixthSection p {
   padding: 0 650px;
@@ -487,4 +485,339 @@ ul {
   margin-bottom: 0;
   color: #155bd5;
   font-weight: 400;
+}
+
+.seventhSection {
+  padding: 80px 0;
+  background-image: url(../img/png/overlay.png);
+  background-size: cover;
+  background-color: #155bd5;
+}
+.seventhSection h2 {
+  color: #fff;
+  padding: 0 650px;
+  font-weight: 600;
+}
+.seventhSection p {
+  color: #fff;
+  padding: 0 650px;
+  margin: 30px 0;
+}
+.seventhSection a {
+  padding: 10px 30px;
+  background-color: #155bd5;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+  border: 1.3px solid #fff;
+  border-radius: 5px;
+}
+
+.eightSection {
+  padding: 80px 0;
+  background-color: #fafafa;
+}
+.eightSection .twoDivs {
+  padding: 60px 45px;
+  background-color: #fff;
+  text-align: left;
+  border-radius: 5px;
+  margin-top: 70px;
+}
+.eightSection .twoDivs p {
+  font-size: 1.1rem;
+  color: #6d6d6d;
+  font-weight: 500;
+  padding: 0;
+}
+.eightSection .twoDivs .employeePosition {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+}
+.eightSection .twoDivs .employeePosition img {
+  width: 15%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.eightSection .twoDivs .employeePosition h5 {
+  margin: 10px 0 0 20px;
+  text-align: left;
+  display: inline-block;
+  color: #2d2d2d;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.eightSection .twoDivs .employeePosition h5 span {
+  display: block;
+  color: #6d6d6d;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.ninethSection {
+  padding: 80px 0;
+}
+.ninethSection p {
+  padding: 0 650px;
+  margin-bottom: 80px;
+}
+.ninethSection .threeDivs {
+  text-align: left;
+}
+.ninethSection .threeDivs .image {
+  width: 100%;
+  position: relative;
+}
+.ninethSection .threeDivs .image img {
+  width: 100%;
+  border-radius: 5px;
+}
+.ninethSection .threeDivs .image .timNorton {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  background-color: #155bd5;
+  padding: 8px 8px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.ninethSection .threeDivs .image .timNorton img {
+  width: 20%;
+  border-radius: 50%;
+}
+.ninethSection .threeDivs .image .timNorton span {
+  font-size: 0.7rem;
+  margin: 5px 0 0 15px;
+  color: #fff;
+}
+.ninethSection .threeDivs h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  margin: 25px 0;
+}
+.ninethSection .threeDivs p {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.tenthSection {
+  padding: 80px 0;
+  background-color: #fafafa;
+}
+.tenthSection p {
+  padding: 0 650px;
+}
+.tenthSection .container {
+  margin-top: 80px;
+}
+.tenthSection .container .main {
+  width: 54.5%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.tenthSection .container .main .image {
+  height: 120px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  margin: 13px 10px;
+}
+.tenthSection .container .main .image img {
+  cursor: pointer;
+}
+
+.eleventhection .contactForm form div textarea, .eleventhection .contactForm form div .inputTypes {
+  padding: 20px 30px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+}
+
+.eleventhection .contactForm form div textarea::-moz-placeholder, .eleventhection .contactForm form div .inputTypes::-moz-placeholder {
+  font-size: 1.1rem;
+  color: #6d6d6d;
+}
+
+.eleventhection .contactForm form div textarea:-ms-input-placeholder, .eleventhection .contactForm form div .inputTypes:-ms-input-placeholder {
+  font-size: 1.1rem;
+  color: #6d6d6d;
+}
+
+.eleventhection .contactForm form div textarea::placeholder, .eleventhection .contactForm form div .inputTypes::placeholder {
+  font-size: 1.1rem;
+  color: #6d6d6d;
+}
+
+.eleventhection {
+  padding: 80px 0;
+}
+.eleventhection .contactItem {
+  width: 30%;
+}
+.eleventhection .contactItem .details {
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+.eleventhection .contactItem .details .phone {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #155bd5;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.eleventhection .contactItem .details h2 {
+  font-size: 1.4rem;
+  color: #155bd5;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.eleventhection .contactItem .details a {
+  display: block;
+  color: #6d6d6d;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.eleventhection .contactItem .details .email {
+  margin-bottom: 0;
+}
+.eleventhection .contactForm {
+  width: 67%;
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+.eleventhection .contactForm h3 {
+  color: #155bd5;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.eleventhection .contactForm h2 {
+  font-size: 2.2rem;
+  color: #1d1d1d;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.eleventhection .contactForm p {
+  padding: 0 100px;
+}
+.eleventhection .contactForm form {
+  margin-top: 40px;
+}
+.eleventhection .contactForm form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.eleventhection .contactForm form div .inputTypes {
+  width: 48%;
+}
+.eleventhection .contactForm form div textarea {
+  height: 150px;
+  width: 100%;
+}
+.eleventhection .contactForm form div textarea::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+}
+.eleventhection .contactForm form div textarea:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+}
+.eleventhection .contactForm form div textarea::placeholder {
+  font-family: "Inter", sans-serif;
+}
+.eleventhection .contactForm form button {
+  background-color: #155bd5;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+footer {
+  padding: 80px 0;
+}
+footer .container .fourDivsImg {
+  width: 25%;
+}
+footer .container .fourDivsImg img {
+  width: 60%;
+}
+footer .container .fourDivsImg .making {
+  padding-top: 10px;
+}
+footer .container .fourDivsImg .making2 {
+  margin-top: 30px;
+}
+footer .container .fourDivsImg .making2 span {
+  display: block;
+}
+footer .container .fourDivsImg .making2 a {
+  color: #155bd5;
+}
+footer .container .fourDiv h2 {
+  font-size: 1.3rem;
+  color: #1d1d1d;
+  margin-bottom: 30px;
+}
+footer .container .fourDiv p {
+  margin-bottom: 12px;
+}
+footer .container .subscribe {
+  width: 30%;
+}
+footer .container .subscribe form {
+  position: relative;
+  width: 100%;
+}
+footer .container .subscribe form input {
+  width: 100%;
+  padding: 18px 18px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+footer .container .subscribe form button {
+  padding: 13px 14PX;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #155bd5;
+  border: none;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 17px;
 }/*# sourceMappingURL=main.css.map */

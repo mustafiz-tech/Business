@@ -1,6 +1,5 @@
 .thirdSection{
-    width: 100%;
-    text-align: center;
+    @extend %sectionExtend;
     background-color: #fafafa;
     padding: 70px 0;
     h4{

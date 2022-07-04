@@ -1,7 +1,6 @@
 .sixthSection{
-    width: 100%;
+    @extend %sectionExtend;
     padding: 80px 0;
-    text-align: center;
     h4{
         @extend %head4Extend;
     }
