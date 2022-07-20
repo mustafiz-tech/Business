@@ -36,6 +36,12 @@
             align-items: center;
             color: #fff;
             font-size: 1.7rem;
+            transition: all 0.2s ease 0s;
+            cursor: pointer;
+        }
+        .playIcon:hover{
+            background-color: #fff;
+            color: #155bd5;
         }
     }
 

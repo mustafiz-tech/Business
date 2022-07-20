@@ -23,18 +23,24 @@
         .button{
             width: 100%;
             .getStarted{
-                padding: 10px 15px;
+                padding: 12px 25px;
                 background-color: #fff;
                 color: #155bd5;
+                border: 1px solid #fff;
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 border-radius: 5px;
                 font-weight: 700;
                 margin-right: 10px;
+                transition: all 0.2s ease 0s;
+            }
+            .getStarted:hover{
+                background-color: #155bd5;
+                color: #fff;
             }
             .watchIntro{
                 i{
-                    padding: 12px;
+                    padding: 15px;
                     background-color: #fff;
                     border-radius: 50%;
                     color: #155bd5;

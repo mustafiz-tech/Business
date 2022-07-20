@@ -30,10 +30,21 @@ footer{
             p{
                 @extend %paraExtend;
                 margin-bottom: 12px;
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+            }
+            p:hover{
+                color: #155bd5;
             }
         }
         .subscribe{
             width: 30%;
+            p{
+                cursor: text;
+            }
+            p:hover{
+                color: #6d6d6d;
+            }
             form{
                 position: relative;
                 width: 100%;

@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css" />
     <title>Business</title>
   </head>
@@ -32,38 +33,94 @@
           <div class="navbar">
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <a href="#pricing">Pricing</a>
               </li>
               <li>
-                <a href="#">Team</a>
+                <a href="#ourTeam">Team</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
-        <a href="#" class="navCon">
+        <a href="#" class="navCon" id="open">
           <i class="fa fa-navicon"></i>
         </a>
       </div>
     </nav>
 
+    <!----------------- slide  section ------------------->
+
+    <div class="slideLeft" id="slideOpen">
+      <div class="closeDiv" id="close">
+        <a href="#">
+          <i class="fa fa-close"></i>
+        </a>
+      </div>
+      <div class="slideContent">
+        <div class="logoimg">
+          <a href="#">
+            <img src="img/svg/logo.svg" alt="">
+          </a>
+          <p>Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.</p>
+          <h2>Quick Links</h2>
+          <ul>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Our Team</a>
+            </li>
+            <li>
+              <a href="#">Latest News</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+          <h2 class="follow">Follow Us On</h2>
+          <div class="iconDiv">
+            <div class="icons">
+              <a href="#">
+                <i class="fa fa-facebook "></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="#">
+                <i class="fa fa-twitter "></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="#">
+                <i class="fa fa-linkedin "></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="#">
+                <i class="fa fa-youtube-play "></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!----------------- banner section ------------------->
 
-    <div class="bannerSection">
+    <div class="bannerSection" id="home">
       <div class="container">
         <div class="twoDivs">
-          <h1>Corporate & Business Site Template by Ayro UI.</h1>
+          <h1 id="change">Corporate & Business Site Template by Ayro UI.</h1>
           <p>
             We are a digital agency that helps brands to achieve their business
             outcomes. We see technology as a tool to create amazing things.
@@ -113,7 +170,7 @@
 
     <!----------------- second section ------------------->
 
-    <div class="secondSection">
+    <div class="secondSection" id="services">
       <h4>Services</h4>
       <h2>Our Best Services</h2>
       <p>
@@ -220,7 +277,7 @@
 
     <!----------------- fourth section ------------------->
 
-    <div class="fourthSection">
+    <div class="fourthSection" id="portfolio">
       <h4>Our Portfolio</h4>
       <h2>Our Recent Works</h2>
       <p>
@@ -372,7 +429,7 @@
 
     <!----------------- fifth section ------------------->
 
-    <div class="fifthSection">
+    <div class="fifthSection" id="pricing">
       <h4>Pricing</h4>
       <h2>Our Recent Works</h2>
       <p class="headPara">
@@ -511,7 +568,7 @@
 
     <!----------------- sixth section ------------------->
 
-    <div class="sixthSection">
+    <div class="sixthSection" id="ourTeam">
       <h4>Our Team</h4>
       <h2>Our Recent Works</h2>
       <p class="headPara">
@@ -566,30 +623,84 @@
         majority have suffered alteration in some form.
       </p>
       <div class="container">
-        <div class="twoDivs">
-          <p>
-            On the other hand denoun with righteous and disliks men who are
-            beguiled demorae momentc blinded by desire that can
-          </p>
-          <div class="employeePosition">
-            <img src="img/jpg/author-4.jpg" alt="">
-            <h5>
-              David Warner
-              <span>Ui/UX Designer</span>
-            </h3>
+        <div class="slideMain">
+          <div class="twoDivs">
+            <p>
+              On the other hand denoun with righteous and disliks men who are
+              beguiled demorae momentc blinded by desire that can
+            </p>
+            <div class="employeePosition">
+              <img src="img/jpg/author-4.jpg" alt="">
+              <h5>
+                David Warner
+                <span>Ui/UX Designer</span>
+              </h3>
+            </div>
           </div>
-        </div>
-        <div class="twoDivs">
-          <p>
-            On the other hand denoun with righteous and disliks men who are
-            beguiled demorae momentc blinded by desire that can
-          </p>
-          <div class="employeePosition">
-            <img src="img/jpg/author-4.jpg" alt="">
-            <h5> 
-              Naimur Rahman
-              <span>Web Developer</span>
-            </h3>
+          <div class="twoDivs">
+            <p>
+              On the other hand denoun with righteous and disliks men who are
+              beguiled demorae momentc blinded by desire that can
+            </p>
+            <div class="employeePosition">
+              <img src="img/jpg/author-4.jpg" alt="">
+              <h5> 
+                Naimur Rahman
+                <span>Web Developer</span>
+              </h3>
+            </div>
+          </div>
+          <div class="twoDivs">
+            <p>
+              On the other hand denoun with righteous and disliks men who are
+              beguiled demorae momentc blinded by desire that can
+            </p>
+            <div class="employeePosition">
+              <img src="img/jpg/author-4.jpg" alt="">
+              <h5>
+                David Warner
+                <span>Ui/UX Designer</span>
+              </h3>
+            </div>
+          </div>
+          <div class="twoDivs">
+            <p>
+              On the other hand denoun with righteous and disliks men who are
+              beguiled demorae momentc blinded by desire that can
+            </p>
+            <div class="employeePosition">
+              <img src="img/jpg/author-4.jpg" alt="">
+              <h5>
+                David Warner
+                <span>Ui/UX Designer</span>
+              </h3>
+            </div>
+          </div>
+          <div class="twoDivs">
+            <p>
+              On the other hand denoun with righteous and disliks men who are
+              beguiled demorae momentc blinded by desire that can
+            </p>
+            <div class="employeePosition">
+              <img src="img/jpg/author-4.jpg" alt="">
+              <h5> 
+                Naimur Rahman
+                <span>Web Developer</span>
+              </h3>
+            </div>
+          </div>
+          <div class="twoDivs">
+            <p>
+              On the other hand denoun with righteous and disliks men who are
+              beguiled demorae momentc blinded by desire that can
+            </p>
+            <div class="employeePosition">
+              <img src="img/jpg/author-4.jpg" alt="">
+              <h5> 
+                Naimur Rahman
+                <span>Web Developer</span>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -686,7 +797,7 @@
 
     <!----------------- eleventh section ------------------->
 
-    <div class="eleventhection">
+    <div class="eleventhection" id="contact">
       <div class="container">
         <div class="contactItem">
           <div class="details">
@@ -738,6 +849,22 @@
       </div>
     </div>
 
+    <!----------------- map section ------------------->
+
+    <div class="mapSection">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d562.018691639406!2d88.380095!3d22.533762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c3a757f554bcc1e!2sKustia%20Mosque!5e1!3m2!1sen!2sbd!4v1658057693434!5m2!1sen!2sbd"
+        width="100%" 
+        height="550" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      `</iframe>
+    </div>
+    </div>
+
     <!----------------- footer section ------------------->
 
     <footer>
@@ -777,5 +904,10 @@
           </div>
       </div>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/myjava.js"></script>
   </body>
 </html>

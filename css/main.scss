@@ -37,12 +37,20 @@ ul{
 }
 
 .twoDivs{
-    width: 47%
+    width: 47%;
 }
 
 .threeDivs{
     width: 32%;
 }
+
+
+// -------------  custom classes  ------------
+
+.slideEffect{
+    right: 0;
+}
+
 
 // -------------------  My extends  -------------------
 %sectionExtend{
@@ -87,3 +95,4 @@ ul{
 @import "tenth";
 @import "eleventh";
 @import "footer";
+@import "slideLeft";

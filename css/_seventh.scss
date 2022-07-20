@@ -17,7 +17,7 @@
         margin: 30px 0;
     }
     a{
-        padding: 10px 30px;
+        padding: 12px 35px;
         background-color: #155bd5;
         font-size: 1rem;
         text-transform: uppercase;
@@ -26,5 +26,10 @@
         color: #fff;
         border: 1.3px solid #fff;
         border-radius: 5px;
+        transition: all 0.2s ease 0s;
+    }
+    a:hover{
+        background-color: #fff;
+        color: #155bd5;
     }
 }

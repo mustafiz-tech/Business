@@ -23,6 +23,10 @@
             font-weight: 500;
             color: #e0e0e0ad;
             margin-top: 9px;
+            transition: all 0.2s ease 0s;
+        }
+        a:hover{
+            color: #fff;
         }
     }
     .navCon{
@@ -34,5 +38,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 0.2s ease 0s;
+    }
+    .navCon:hover{
+        background-color: #fff;
+        color: #155bd5;
     }
 }

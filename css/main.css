@@ -45,12 +45,16 @@ ul {
   width: 32%;
 }
 
+.slideEffect {
+  right: 0;
+}
+
 .tenthSection, .ninethSection, .eightSection, .seventhSection, .sixthSection, .fifthSection, .fourthSection, .thirdSection, .secondSection {
   width: 100%;
   text-align: center;
 }
 
-footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs p {
+.slideLeft p, footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs p {
   color: #6d6d6d;
   font-size: 1.1rem;
   line-height: 1.6rem;
@@ -99,6 +103,10 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   font-weight: 500;
   color: rgba(224, 224, 224, 0.6784313725);
   margin-top: 9px;
+  transition: all 0.2s ease 0s;
+}
+.navSection ul li a:hover {
+  color: #fff;
 }
 .navSection .navCon {
   height: 40px;
@@ -109,6 +117,11 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease 0s;
+}
+.navSection .navCon:hover {
+  background-color: #fff;
+  color: #155bd5;
 }
 
 .bannerSection {
@@ -137,17 +150,23 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   width: 100%;
 }
 .bannerSection .twoDivs .button .getStarted {
-  padding: 10px 15px;
+  padding: 12px 25px;
   background-color: #fff;
   color: #155bd5;
+  border: 1px solid #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 5px;
   font-weight: 700;
   margin-right: 10px;
+  transition: all 0.2s ease 0s;
+}
+.bannerSection .twoDivs .button .getStarted:hover {
+  background-color: #155bd5;
+  color: #fff;
 }
 .bannerSection .twoDivs .button .watchIntro i {
-  padding: 12px;
+  padding: 15px;
   background-color: #fff;
   border-radius: 50%;
   color: #155bd5;
@@ -202,6 +221,10 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   color: #2d2d2d;
   font-weight: 600;
   text-transform: capitalize;
+  transition: all 0.2s ease 0s;
+}
+.firstSection .twoDivs nav a:hover {
+  color: #155bd5;
 }
 .firstSection .twoDivs nav .WhoWeAre {
   background-color: #155bd5;
@@ -228,6 +251,7 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   border-radius: 8px;
   padding: 35px 20px;
   margin-bottom: 20px;
+  transition: all 0.2s ease 0s;
 }
 .secondSection .threeDivs .iconImg {
   height: 75px;
@@ -247,6 +271,9 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   font-size: 1.2rem;
   font-weight: 600;
   margin: 15px 0;
+}
+.secondSection .threeDivs:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2588235294);
 }
 
 .thirdSection {
@@ -281,6 +308,12 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   align-items: center;
   color: #fff;
   font-size: 1.7rem;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+.thirdSection .container .playIcon:hover {
+  background-color: #fff;
+  color: #155bd5;
 }
 
 .fourthSection {
@@ -291,14 +324,21 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
 }
 .fourthSection .buttons {
   margin: 40px 0;
+  position: relative;
 }
 .fourthSection .buttons a {
   font-size: 1.1rem;
   text-transform: uppercase;
   color: #6d6d6d;
   font-weight: 600;
-  padding: 8px 30px;
+  padding: 15px 40px;
   margin: 5px 0;
+  transition: all 0.3s ease 0s;
+  border-bottom: 4px solid #fff;
+}
+.fourthSection .buttons a:hover {
+  color: #155bd5;
+  border-bottom: 4px solid #155bd5;
 }
 .fourthSection .container {
   text-align: left;
@@ -364,8 +404,9 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
 }
 .fifthSection .threeDivs {
   padding: 50px;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1411764706);
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1411764706);
+  transition: all 0.2s ease 0s;
 }
 .fifthSection .threeDivs h4 {
   padding: 7px 20px;
@@ -412,6 +453,11 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   color: #155bd5;
   border: 1.3px solid #155bd5;
   border-radius: 5px;
+  transition: all 0.2s ease 0s;
+}
+.fifthSection .threeDivs .freeTrial a:hover {
+  color: #fff;
+  background-color: #155bd5;
 }
 .fifthSection .threeDivs .tableContent {
   text-align: left;
@@ -428,6 +474,12 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
 .fifthSection .threeDivs .tableContent p .randomCircle {
   color: #6d6d6d;
 }
+.fifthSection .threeDivs:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1411764706);
+}
+.fifthSection .Exclusive {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1411764706);
+}
 .fifthSection .Exclusive h4 {
   background-color: #155bd5;
   color: #fff;
@@ -438,6 +490,11 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
 .fifthSection .Exclusive .freeTrial a {
   background-color: #155bd5;
   color: #fff;
+  transition: all 0.2s ease 0s;
+}
+.fifthSection .Exclusive .freeTrial a:hover {
+  color: #155bd5;
+  background-color: #fff;
 }
 .fifthSection .premium .pricingDiv p .currency {
   left: 0;
@@ -504,7 +561,7 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   margin: 30px 0;
 }
 .seventhSection a {
-  padding: 10px 30px;
+  padding: 12px 35px;
   background-color: #155bd5;
   font-size: 1rem;
   text-transform: uppercase;
@@ -513,36 +570,52 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   color: #fff;
   border: 1.3px solid #fff;
   border-radius: 5px;
+  transition: all 0.2s ease 0s;
+}
+.seventhSection a:hover {
+  background-color: #fff;
+  color: #155bd5;
 }
 
 .eightSection {
-  padding: 80px 0;
+  padding: 100px 0 150px 0;
   background-color: #fafafa;
 }
-.eightSection .twoDivs {
+.eightSection p {
+  padding: 0 650px;
+}
+.eightSection .slideMain {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.eightSection .slideMain .twoDivs {
   padding: 60px 45px;
   background-color: #fff;
   text-align: left;
   border-radius: 5px;
   margin-top: 70px;
+  margin-right: 20px;
 }
-.eightSection .twoDivs p {
+.eightSection .slideMain .twoDivs p {
   font-size: 1.1rem;
   color: #6d6d6d;
   font-weight: 500;
   padding: 0;
 }
-.eightSection .twoDivs .employeePosition {
+.eightSection .slideMain .twoDivs .employeePosition {
   margin-top: 40px;
   display: flex;
   width: 100%;
 }
-.eightSection .twoDivs .employeePosition img {
+.eightSection .slideMain .twoDivs .employeePosition img {
   width: 15%;
   border-radius: 50%;
   display: inline-block;
 }
-.eightSection .twoDivs .employeePosition h5 {
+.eightSection .slideMain .twoDivs .employeePosition h5 {
   margin: 10px 0 0 20px;
   text-align: left;
   display: inline-block;
@@ -550,12 +623,27 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   font-size: 1.2rem;
   font-weight: 600;
 }
-.eightSection .twoDivs .employeePosition h5 span {
+.eightSection .slideMain .twoDivs .employeePosition h5 span {
   display: block;
   color: #6d6d6d;
   font-size: 0.9rem;
   margin-top: 5px;
   font-weight: 500;
+}
+.eightSection .slideMain .slick-dots {
+  position: absolute;
+  bottom: -80px;
+  left: 46.5%;
+}
+.eightSection .slideMain .slick-dots li button {
+  border-radius: 50%;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  border: none;
+  background-color: #6d6d6d;
+  cursor: pointer;
 }
 
 .ninethSection {
@@ -571,10 +659,16 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
 .ninethSection .threeDivs .image {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .ninethSection .threeDivs .image img {
   width: 100%;
   border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+.ninethSection .threeDivs .image img:hover {
+  transform: scale(1.1);
 }
 .ninethSection .threeDivs .image .timNorton {
   width: 150px;
@@ -601,6 +695,10 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   font-weight: 600;
   color: #1d1d1d;
   margin: 25px 0;
+  transition: all 0.5s ease 0s;
+}
+.ninethSection .threeDivs h3:hover {
+  color: #155bd5;
 }
 .ninethSection .threeDivs p {
   padding: 0;
@@ -634,9 +732,14 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   border-radius: 8px;
   border: 1px solid #eee;
   margin: 13px 10px;
+  transition: all 0.5s ease 0s;
 }
 .tenthSection .container .main .image img {
   cursor: pointer;
+}
+.tenthSection .container .main .image:hover {
+  transform: translatey(-5px);
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.1411764706);
 }
 
 .eleventhection .contactForm form div textarea, .eleventhection .contactForm form div .inputTypes {
@@ -675,6 +778,7 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   border: 1px solid #e0e0e0;
   padding: 20px 30px;
   margin-bottom: 30px;
+  transition: all 0.5s ease 0s;
 }
 .eleventhection .contactItem .details .phone {
   height: 50px;
@@ -703,12 +807,16 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
 .eleventhection .contactItem .details .email {
   margin-bottom: 0;
 }
+.eleventhection .contactItem .details:hover {
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.1411764706);
+}
 .eleventhection .contactForm {
   width: 67%;
   text-align: center;
   padding: 60px 40px;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
+  transition: all 0.5s ease 0s;
 }
 .eleventhection .contactForm h3 {
   color: #155bd5;
@@ -761,6 +869,9 @@ footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .c
   border-radius: 25px;
   margin-top: 10px;
 }
+.eleventhection .contactForm:hover {
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1411764706);
+}
 
 footer {
   padding: 80px 0;
@@ -790,9 +901,20 @@ footer .container .fourDiv h2 {
 }
 footer .container .fourDiv p {
   margin-bottom: 12px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+footer .container .fourDiv p:hover {
+  color: #155bd5;
 }
 footer .container .subscribe {
   width: 30%;
+}
+footer .container .subscribe p {
+  cursor: text;
+}
+footer .container .subscribe p:hover {
+  color: #6d6d6d;
 }
 footer .container .subscribe form {
   position: relative;
@@ -820,4 +942,80 @@ footer .container .subscribe form button {
   position: absolute;
   right: 10px;
   top: 17px;
+}
+
+.slideLeft {
+  min-height: 1000px;
+  width: 350px;
+  background-color: #efefef;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  z-index: 999;
+  padding: 80px 30px;
+}
+.slideLeft .closeDiv {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.slideLeft .closeDiv a {
+  font-size: 2rem;
+  color: #6d6d6d;
+  transition: all 0.2s ease 0s;
+}
+.slideLeft .closeDiv a:hover {
+  transform: rotate(90deg);
+}
+.slideLeft p {
+  padding: 20px 20px 20px 0;
+}
+.slideLeft h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #1d1d1d;
+  padding-bottom: 20px;
+}
+.slideLeft ul {
+  display: block;
+}
+.slideLeft ul li a {
+  color: #6d6d6d;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease 0s;
+}
+.slideLeft ul li a:hover {
+  transform: translatex(10px);
+  color: #155bd5;
+}
+.slideLeft .follow {
+  margin-top: 10px;
+}
+.slideLeft .iconDiv {
+  display: flex;
+}
+.slideLeft .iconDiv .icons {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #6d6d6d;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+.slideLeft .iconDiv .icons a {
+  color: #6d6d6d;
+}
+.slideLeft .iconDiv .icons a i {
+  font-size: 1.1rem;
+}
+.slideLeft .iconDiv .icons:hover {
+  background-color: #155bd5;
+}
+.slideLeft .iconDiv .icons:hover a {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -43,7 +43,10 @@
                color: #2d2d2d;
                font-weight: 600;
                text-transform: capitalize;
-               
+               transition: all 0.2s ease 0s;               
+            }
+            a:hover{
+                color: #155bd5;
             }
             .WhoWeAre{
                 background-color: #155bd5;

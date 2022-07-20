@@ -1,0 +1,76 @@
+.slideLeft{
+    min-height: 1000px;
+    width: 350px;
+    background-color: #efefef;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    z-index: 999;
+    padding: 80px 30px;
+    .closeDiv{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        a{
+            font-size: 2rem;
+            color: #6d6d6d;
+            transition: all 0.2s ease 0s;
+        }
+        a:hover{
+            transform: rotate(90deg);
+        }
+    }
+    p{
+        @extend %paraExtend;
+        padding: 20px 20px 20px 0;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: #1d1d1d;
+        padding-bottom: 20px;
+    }
+    ul{
+        display: block;
+        li a{
+            color: #6d6d6d;
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s ease 0s;
+        }
+        li a:hover{
+            transform: translatex(10px);
+            color: #155bd5;
+        }
+    }
+    .follow{
+        margin-top: 10px;
+    }
+    .iconDiv{
+        display: flex;
+        .icons{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 1px solid #6d6d6d;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease 0s;
+            a{
+                color: #6d6d6d;
+                i{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .icons:hover{
+            background-color: #155bd5;
+        }
+        .icons:hover a{
+            color: #fff;
+        }
+    }
+}
