@@ -52,6 +52,9 @@
                 background-color: #155bd5;
                 color: #fff
             }
+            .WhoWeAre:hover{
+                color: #fff
+            }
         }
         p{
             @extend %paraExtend;

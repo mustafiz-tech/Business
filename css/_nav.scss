@@ -1,7 +1,7 @@
 .navSection{
     width: 100%;
     background-color: #155bd5;
-    padding: 15px 0;
+    padding: 25px 0;
     position: fixed;
     z-index: 100;
     a{
@@ -19,7 +19,7 @@
     ul li{
         margin-left: 25px;
         a{
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 500;
             color: #e0e0e0ad;
             margin-top: 9px;
@@ -44,4 +44,8 @@
         background-color: #fff;
         color: #155bd5;
     }
+}
+
+.active{
+    color: #fff;
 }

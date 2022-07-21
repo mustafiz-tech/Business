@@ -18,5 +18,15 @@ $(function(){
     $('#open').click(function(){
        $('#slideOpen').addClass('slideEffect');
     });
+    $('#close').click(function(){
+        $('#slideOpen').removeClass('slideEffect');
+     });
 })
 
+// ----------  active class  -----------
+
+$(function(){
+    $('.navSection ul li').click(function(){
+        $('.navSection ul li').addClass('active')
+    })
+})

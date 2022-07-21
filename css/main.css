@@ -45,16 +45,12 @@ ul {
   width: 32%;
 }
 
-.slideEffect {
-  right: 0;
-}
-
 .tenthSection, .ninethSection, .eightSection, .seventhSection, .sixthSection, .fifthSection, .fourthSection, .thirdSection, .secondSection {
   width: 100%;
   text-align: center;
 }
 
-.slideLeft p, footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs p {
+.slideLeft .mainSlide p, footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs p {
   color: #6d6d6d;
   font-size: 1.1rem;
   line-height: 1.6rem;
@@ -79,7 +75,7 @@ ul {
 .navSection {
   width: 100%;
   background-color: #155bd5;
-  padding: 15px 0;
+  padding: 25px 0;
   position: fixed;
   z-index: 100;
 }
@@ -99,7 +95,7 @@ ul {
   margin-left: 25px;
 }
 .navSection ul li a {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: rgba(224, 224, 224, 0.6784313725);
   margin-top: 9px;
@@ -122,6 +118,10 @@ ul {
 .navSection .navCon:hover {
   background-color: #fff;
   color: #155bd5;
+}
+
+.active {
+  color: #fff;
 }
 
 .bannerSection {
@@ -228,6 +228,9 @@ ul {
 }
 .firstSection .twoDivs nav .WhoWeAre {
   background-color: #155bd5;
+  color: #fff;
+}
+.firstSection .twoDivs nav .WhoWeAre:hover {
   color: #fff;
 }
 .firstSection .twoDivs p {
@@ -945,58 +948,63 @@ footer .container .subscribe form button {
 }
 
 .slideLeft {
-  min-height: 1000px;
-  width: 350px;
+  min-height: 100%;
+  width: 400px;
   background-color: #efefef;
   position: fixed;
   top: 0;
-  right: -350px;
+  right: -400px;
   z-index: 999;
   padding: 80px 30px;
+  transition: all 500ms ease 0s;
 }
-.slideLeft .closeDiv {
+.slideLeft .mainSlide {
+  width: 100%;
+  position: relative;
+}
+.slideLeft .mainSlide .closeDiv {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: -50PX;
+  right: 0;
 }
-.slideLeft .closeDiv a {
+.slideLeft .mainSlide .closeDiv a {
   font-size: 2rem;
   color: #6d6d6d;
-  transition: all 0.2s ease 0s;
+  transition: all 0.1s ease 0s;
 }
-.slideLeft .closeDiv a:hover {
+.slideLeft .mainSlide .closeDiv a:hover {
   transform: rotate(90deg);
 }
-.slideLeft p {
+.slideLeft .mainSlide p {
   padding: 20px 20px 20px 0;
 }
-.slideLeft h2 {
+.slideLeft .mainSlide h2 {
   font-weight: 600;
   font-size: 1.3rem;
   color: #1d1d1d;
   padding-bottom: 20px;
 }
-.slideLeft ul {
+.slideLeft .mainSlide ul {
   display: block;
 }
-.slideLeft ul li a {
+.slideLeft .mainSlide ul li a {
   color: #6d6d6d;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 1.1rem;
   transition: all 0.3s ease 0s;
 }
-.slideLeft ul li a:hover {
+.slideLeft .mainSlide ul li a:hover {
   transform: translatex(10px);
   color: #155bd5;
 }
-.slideLeft .follow {
+.slideLeft .mainSlide .follow {
   margin-top: 10px;
 }
-.slideLeft .iconDiv {
+.slideLeft .mainSlide .iconDiv {
   display: flex;
 }
-.slideLeft .iconDiv .icons {
+.slideLeft .mainSlide .iconDiv .icons {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -1007,15 +1015,19 @@ footer .container .subscribe form button {
   align-items: center;
   transition: all 0.3s ease 0s;
 }
-.slideLeft .iconDiv .icons a {
+.slideLeft .mainSlide .iconDiv .icons a {
   color: #6d6d6d;
 }
-.slideLeft .iconDiv .icons a i {
+.slideLeft .mainSlide .iconDiv .icons a i {
   font-size: 1.1rem;
 }
-.slideLeft .iconDiv .icons:hover {
+.slideLeft .mainSlide .iconDiv .icons:hover {
   background-color: #155bd5;
 }
-.slideLeft .iconDiv .icons:hover a {
+.slideLeft .mainSlide .iconDiv .icons:hover a {
   color: #fff;
+}
+
+.slideEffect {
+  right: 0;
 }/*# sourceMappingURL=main.css.map */
