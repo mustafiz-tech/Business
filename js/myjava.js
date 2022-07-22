@@ -26,7 +26,8 @@ $(function(){
 // ----------  active class  -----------
 
 $(function(){
-    $('.navSection ul li').click(function(){
-        $('.navSection ul li').addClass('active')
-    })
-})
+    $('li a').click(function(){
+        $('li a').removeClass('active');
+        $(this).addClass('avtive')
+    });
+});

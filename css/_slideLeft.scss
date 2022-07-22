@@ -1,20 +1,25 @@
 .slideLeft{
-    min-height: 100%;
-    width: 400px;
-    background-color: #efefef;
+    height: 100%;
+    width: 100%;
     position: fixed;
-    top: 0;
-    right: -400px;
-    z-index: 999;
-    padding: 80px 30px;
+    z-index: 100;
+    right: -100%;
+    background-color: #000000b0;
     transition: all 500ms ease 0s;
-    .mainSlide{
-        width: 100%;
-        position: relative;
+    .rightSlide{
+        height: 100%;
+        width: 400px;
+        background-color: #efefef;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        padding: 100px 30px;
+        transition: all 500ms ease 0s;
+        margin-left: 80%;
         .closeDiv{
             position: absolute;
-            top: -50PX;
-            right: 0;
+            top: 30px;
+            right: 30px;
             a{
                 font-size: 2rem;
                 color: #6d6d6d;

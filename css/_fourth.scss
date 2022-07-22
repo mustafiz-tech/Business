@@ -32,15 +32,46 @@
     .container{
         text-align: left;
         flex-wrap: wrap;
-        .threeDivs{
-            position: relative;
-        }
         .workPositions{
             margin-bottom: 30px;
-            img{
-                width: 100%;
-                border-radius: 5px;
+            .portfolioImage{
+                position: relative;
+                img{
+                    width: 100%;
+                    border-radius: 5px;
+                    display: block;
+                }
+                .overlay{
+                    padding: 110px;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    position: absolute;
+                    top: 20px;
+                    left: 50%;
+                    transform: translatex(-50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .overlayIcons{
+                        height: 60px;
+                        width: 60px;
+                        background-color: #155bd5;
+                        margin-right: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 10px;
+                        color: #fff;
+                        font-size: 1.8rem;
+                    }
+                    .link{
+                        margin-right: 0;
+                    }
+                    transition: all 0.2s ease-in 0s;
+                    opacity: 0;
+                }
             }
+       
             h3{
                 font-size: 1.5rem;
                 font-weight: 600;
@@ -51,34 +82,12 @@
                 color: #1d1d1d;
             }
         }
-        .overlay{
-            height: 300px;
-            width: 380px;
-            background-color: #fff;
-            border-radius: 8px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .overlayIcons{
-                height: 60px;
-                width: 60px;
-                background-color: #155bd5;
-                margin-right: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-                color: #fff;
-                font-size: 1.8rem;
+        .workPositions:hover {
+            .portfolioImage{
+                .overlay{
+                    opacity: 80%;
+                }
             }
-            transition: all 0.2s ease-in 0s;
-            opacity: 0;
-        }
-        .overlay:hover{
-            opacity: 80%;
         }
 
     }

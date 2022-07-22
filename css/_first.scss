@@ -31,35 +31,38 @@
             @extend %head2Extend;
             padding: 20px 0;
         }
-        nav{
-            background-color: #efefef;
-            padding: 10px;
-            border-radius: 5px;
-            a{
-               padding: 10px;
-               background-color: #fff;
-               margin-right: 10px;
-               border-radius: 3px;
-               color: #2d2d2d;
-               font-weight: 600;
-               text-transform: capitalize;
-               transition: all 0.2s ease 0s;               
+        .tabs{
+
+            ul{
+                background-color: #efefef;
+                padding: 10px;
+                border-radius: 5px;
+                li{
+                    padding: 10px;
+                    background-color: #fff;
+                    margin-right: 10px;
+                    border-radius: 3px;
+                    text-transform: capitalize;
+                    transition: all 0.2s ease 0s;  
+                    a{
+                        color: #2d2d2d;
+                        font-weight: 600;             
+                     }
+                    a:hover{
+                        color: #155bd5;
+                    }
+                }
             }
-            a:hover{
-                color: #155bd5;
-            }
-            .WhoWeAre{
+            ul li:hover,
+            ul li.active {
                 background-color: #155bd5;
                 color: #fff
             }
-            .WhoWeAre:hover{
-                color: #fff
+            p{
+                @extend %paraExtend;
+                padding: 0 0;
+                margin: 15px 0;
             }
-        }
-        p{
-            @extend %paraExtend;
-            padding: 0 0;
-            margin: 15px 0;
         }
     }
 }

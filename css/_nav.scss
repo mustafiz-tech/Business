@@ -9,6 +9,7 @@
     }
     .imageDiv{
         width: 25%;
+        display: flex;
         img{
             width: 100%;
         }
@@ -29,6 +30,9 @@
             color: #fff;
         }
     }
+    ul li a.active{
+        color: #fff;
+    }
     .navCon{
         height: 40px;
         width: 40px;
@@ -44,8 +48,4 @@
         background-color: #fff;
         color: #155bd5;
     }
-}
-
-.active{
-    color: #fff;
 }

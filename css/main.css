@@ -6,6 +6,7 @@
 
 html {
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,7 +51,7 @@ ul {
   text-align: center;
 }
 
-.slideLeft .mainSlide p, footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs p {
+.slideLeft .rightSlide p, footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactMain .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs .tabs p {
   color: #6d6d6d;
   font-size: 1.1rem;
   line-height: 1.6rem;
@@ -84,6 +85,7 @@ ul {
 }
 .navSection .imageDiv {
   width: 25%;
+  display: flex;
 }
 .navSection .imageDiv img {
   width: 100%;
@@ -104,6 +106,9 @@ ul {
 .navSection ul li a:hover {
   color: #fff;
 }
+.navSection ul li a.active {
+  color: #fff;
+}
 .navSection .navCon {
   height: 40px;
   width: 40px;
@@ -118,10 +123,6 @@ ul {
 .navSection .navCon:hover {
   background-color: #fff;
   color: #155bd5;
-}
-
-.active {
-  color: #fff;
 }
 
 .bannerSection {
@@ -150,7 +151,7 @@ ul {
   width: 100%;
 }
 .bannerSection .twoDivs .button .getStarted {
-  padding: 12px 25px;
+  padding: 13px 25px;
   background-color: #fff;
   color: #155bd5;
   border: 1px solid #fff;
@@ -166,7 +167,7 @@ ul {
   color: #fff;
 }
 .bannerSection .twoDivs .button .watchIntro i {
-  padding: 15px;
+  padding: 15px 17px;
   background-color: #fff;
   border-radius: 50%;
   color: #155bd5;
@@ -208,32 +209,32 @@ ul {
 .firstSection .twoDivs h2 {
   padding: 20px 0;
 }
-.firstSection .twoDivs nav {
+.firstSection .twoDivs .tabs ul {
   background-color: #efefef;
   padding: 10px;
   border-radius: 5px;
 }
-.firstSection .twoDivs nav a {
+.firstSection .twoDivs .tabs ul li {
   padding: 10px;
   background-color: #fff;
   margin-right: 10px;
   border-radius: 3px;
-  color: #2d2d2d;
-  font-weight: 600;
   text-transform: capitalize;
   transition: all 0.2s ease 0s;
 }
-.firstSection .twoDivs nav a:hover {
+.firstSection .twoDivs .tabs ul li a {
+  color: #2d2d2d;
+  font-weight: 600;
+}
+.firstSection .twoDivs .tabs ul li a:hover {
   color: #155bd5;
 }
-.firstSection .twoDivs nav .WhoWeAre {
+.firstSection .twoDivs .tabs ul li:hover,
+.firstSection .twoDivs .tabs ul li.active {
   background-color: #155bd5;
   color: #fff;
 }
-.firstSection .twoDivs nav .WhoWeAre:hover {
-  color: #fff;
-}
-.firstSection .twoDivs p {
+.firstSection .twoDivs .tabs p {
   padding: 0 0;
   margin: 15px 0;
 }
@@ -305,6 +306,7 @@ ul {
   position: absolute;
   top: 40%;
   left: 50%;
+  transform: translatex(-50%);
   background-color: #155bd5;
   display: flex;
   justify-content: center;
@@ -347,40 +349,32 @@ ul {
   text-align: left;
   flex-wrap: wrap;
 }
-.fourthSection .container .threeDivs {
-  position: relative;
-}
 .fourthSection .container .workPositions {
   margin-bottom: 30px;
 }
-.fourthSection .container .workPositions img {
+.fourthSection .container .workPositions .portfolioImage {
+  position: relative;
+}
+.fourthSection .container .workPositions .portfolioImage img {
   width: 100%;
   border-radius: 5px;
+  display: block;
 }
-.fourthSection .container .workPositions h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 15px 0;
-}
-.fourthSection .container .workPositions p {
-  padding: 0;
-  color: #1d1d1d;
-}
-.fourthSection .container .overlay {
-  height: 300px;
-  width: 380px;
+.fourthSection .container .workPositions .portfolioImage .overlay {
+  padding: 110px;
   background-color: #fff;
   border-radius: 8px;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 50%;
+  transform: translatex(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in 0s;
   opacity: 0;
 }
-.fourthSection .container .overlay .overlayIcons {
+.fourthSection .container .workPositions .portfolioImage .overlay .overlayIcons {
   height: 60px;
   width: 60px;
   background-color: #155bd5;
@@ -392,7 +386,19 @@ ul {
   color: #fff;
   font-size: 1.8rem;
 }
-.fourthSection .container .overlay:hover {
+.fourthSection .container .workPositions .portfolioImage .overlay .link {
+  margin-right: 0;
+}
+.fourthSection .container .workPositions h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.fourthSection .container .workPositions p {
+  padding: 0;
+  color: #1d1d1d;
+}
+.fourthSection .container .workPositions:hover .portfolioImage .overlay {
   opacity: 80%;
 }
 
@@ -534,6 +540,7 @@ ul {
   background-color: #fff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  transition: all 300ms ease;
 }
 .sixthSection .threeDivs .teamContact h3 {
   font-size: 1.4rem;
@@ -545,6 +552,39 @@ ul {
   margin-bottom: 0;
   color: #155bd5;
   font-weight: 400;
+}
+.sixthSection .threeDivs .teamContact .socialIcons {
+  padding: 10px 35px;
+  background-color: #fafafa;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 25px;
+  transition: all 500ms ease;
+  display: none;
+}
+.sixthSection .threeDivs .teamContact .socialIcons a {
+  color: #6d6d6d;
+  margin-right: 15px;
+  font-size: 1.1rem;
+}
+.sixthSection .threeDivs .teamContact .socialIcons .pinterest {
+  margin-right: 0;
+}
+.sixthSection .threeDivs:hover .teamContact {
+  padding-top: 50px;
+  background-color: #155bd5;
+  color: #fff;
+}
+.sixthSection .threeDivs:hover .teamContact p {
+  color: #fff;
+}
+.sixthSection .threeDivs:hover .teamContact .socialIcons {
+  display: block;
+}
+.sixthSection .threeDivs:hover .teamContact .socialIcons a:hover {
+  color: #155bd5;
 }
 
 .seventhSection {
@@ -668,6 +708,7 @@ ul {
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
+  display: block;
   transition: all 0.5s ease 0s;
 }
 .ninethSection .threeDivs .image img:hover {
@@ -745,7 +786,7 @@ ul {
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.1411764706);
 }
 
-.eleventhection .contactForm form div textarea, .eleventhection .contactForm form div .inputTypes {
+.eleventhection .contactMain .contactForm form div textarea, .eleventhection .contactMain .contactForm form div .inputTypes {
   padding: 20px 30px;
   border-radius: 25px;
   margin-bottom: 25px;
@@ -753,17 +794,17 @@ ul {
   outline: none;
 }
 
-.eleventhection .contactForm form div textarea::-moz-placeholder, .eleventhection .contactForm form div .inputTypes::-moz-placeholder {
+.eleventhection .contactMain .contactForm form div textarea::-moz-placeholder, .eleventhection .contactMain .contactForm form div .inputTypes::-moz-placeholder {
   font-size: 1.1rem;
   color: #6d6d6d;
 }
 
-.eleventhection .contactForm form div textarea:-ms-input-placeholder, .eleventhection .contactForm form div .inputTypes:-ms-input-placeholder {
+.eleventhection .contactMain .contactForm form div textarea:-ms-input-placeholder, .eleventhection .contactMain .contactForm form div .inputTypes:-ms-input-placeholder {
   font-size: 1.1rem;
   color: #6d6d6d;
 }
 
-.eleventhection .contactForm form div textarea::placeholder, .eleventhection .contactForm form div .inputTypes::placeholder {
+.eleventhection .contactMain .contactForm form div textarea::placeholder, .eleventhection .contactMain .contactForm form div .inputTypes::placeholder {
   font-size: 1.1rem;
   color: #6d6d6d;
 }
@@ -813,53 +854,58 @@ ul {
 .eleventhection .contactItem .details:hover {
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.1411764706);
 }
-.eleventhection .contactForm {
+.eleventhection .contactMain {
   width: 67%;
+  position: relative;
+}
+.eleventhection .contactMain .contactForm {
   text-align: center;
   padding: 60px 40px;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
   transition: all 0.5s ease 0s;
+  position: absolute;
+  top: 0;
 }
-.eleventhection .contactForm h3 {
+.eleventhection .contactMain .contactForm h3 {
   color: #155bd5;
   font-size: 1.4rem;
   font-weight: 700;
 }
-.eleventhection .contactForm h2 {
+.eleventhection .contactMain .contactForm h2 {
   font-size: 2.2rem;
   color: #1d1d1d;
   font-weight: 600;
   margin: 10px 0;
 }
-.eleventhection .contactForm p {
+.eleventhection .contactMain .contactForm p {
   padding: 0 100px;
 }
-.eleventhection .contactForm form {
+.eleventhection .contactMain .contactForm form {
   margin-top: 40px;
 }
-.eleventhection .contactForm form div {
+.eleventhection .contactMain .contactForm form div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.eleventhection .contactForm form div .inputTypes {
+.eleventhection .contactMain .contactForm form div .inputTypes {
   width: 48%;
 }
-.eleventhection .contactForm form div textarea {
+.eleventhection .contactMain .contactForm form div textarea {
   height: 150px;
   width: 100%;
 }
-.eleventhection .contactForm form div textarea::-moz-placeholder {
+.eleventhection .contactMain .contactForm form div textarea::-moz-placeholder {
   font-family: "Inter", sans-serif;
 }
-.eleventhection .contactForm form div textarea:-ms-input-placeholder {
+.eleventhection .contactMain .contactForm form div textarea:-ms-input-placeholder {
   font-family: "Inter", sans-serif;
 }
-.eleventhection .contactForm form div textarea::placeholder {
+.eleventhection .contactMain .contactForm form div textarea::placeholder {
   font-family: "Inter", sans-serif;
 }
-.eleventhection .contactForm form button {
+.eleventhection .contactMain .contactForm form button {
   background-color: #155bd5;
   border: none;
   padding: 15px 30px;
@@ -948,63 +994,68 @@ footer .container .subscribe form button {
 }
 
 .slideLeft {
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  right: -100%;
+  background-color: rgba(0, 0, 0, 0.6901960784);
+  transition: all 500ms ease 0s;
+}
+.slideLeft .rightSlide {
+  height: 100%;
   width: 400px;
   background-color: #efefef;
   position: fixed;
   top: 0;
-  right: -400px;
   z-index: 999;
-  padding: 80px 30px;
+  padding: 100px 30px;
   transition: all 500ms ease 0s;
+  margin-left: 80%;
 }
-.slideLeft .mainSlide {
-  width: 100%;
-  position: relative;
-}
-.slideLeft .mainSlide .closeDiv {
+.slideLeft .rightSlide .closeDiv {
   position: absolute;
-  top: -50PX;
-  right: 0;
+  top: 30px;
+  right: 30px;
 }
-.slideLeft .mainSlide .closeDiv a {
+.slideLeft .rightSlide .closeDiv a {
   font-size: 2rem;
   color: #6d6d6d;
   transition: all 0.1s ease 0s;
 }
-.slideLeft .mainSlide .closeDiv a:hover {
+.slideLeft .rightSlide .closeDiv a:hover {
   transform: rotate(90deg);
 }
-.slideLeft .mainSlide p {
+.slideLeft .rightSlide p {
   padding: 20px 20px 20px 0;
 }
-.slideLeft .mainSlide h2 {
+.slideLeft .rightSlide h2 {
   font-weight: 600;
   font-size: 1.3rem;
   color: #1d1d1d;
   padding-bottom: 20px;
 }
-.slideLeft .mainSlide ul {
+.slideLeft .rightSlide ul {
   display: block;
 }
-.slideLeft .mainSlide ul li a {
+.slideLeft .rightSlide ul li a {
   color: #6d6d6d;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 1.1rem;
   transition: all 0.3s ease 0s;
 }
-.slideLeft .mainSlide ul li a:hover {
+.slideLeft .rightSlide ul li a:hover {
   transform: translatex(10px);
   color: #155bd5;
 }
-.slideLeft .mainSlide .follow {
+.slideLeft .rightSlide .follow {
   margin-top: 10px;
 }
-.slideLeft .mainSlide .iconDiv {
+.slideLeft .rightSlide .iconDiv {
   display: flex;
 }
-.slideLeft .mainSlide .iconDiv .icons {
+.slideLeft .rightSlide .iconDiv .icons {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -1015,16 +1066,16 @@ footer .container .subscribe form button {
   align-items: center;
   transition: all 0.3s ease 0s;
 }
-.slideLeft .mainSlide .iconDiv .icons a {
+.slideLeft .rightSlide .iconDiv .icons a {
   color: #6d6d6d;
 }
-.slideLeft .mainSlide .iconDiv .icons a i {
+.slideLeft .rightSlide .iconDiv .icons a i {
   font-size: 1.1rem;
 }
-.slideLeft .mainSlide .iconDiv .icons:hover {
+.slideLeft .rightSlide .iconDiv .icons:hover {
   background-color: #155bd5;
 }
-.slideLeft .mainSlide .iconDiv .icons:hover a {
+.slideLeft .rightSlide .iconDiv .icons:hover a {
   color: #fff;
 }
 
