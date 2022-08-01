@@ -25,9 +25,6 @@
                 display: block;
                 transition: all 0.5s ease 0s;
             }
-            img:hover{
-                transform: scale(1.1);
-            }
             .timNorton{
                 width: 150px;
                 height: 40px;
@@ -62,6 +59,11 @@
         p{
             padding: 0;
             margin-bottom: 0;
+        }
+    }
+    .threeDivs:hover{
+        img{
+            transform: scale(1.1);
         }
     }
 }

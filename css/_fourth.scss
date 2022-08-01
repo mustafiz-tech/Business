@@ -42,13 +42,14 @@
                     display: block;
                 }
                 .overlay{
-                    padding: 110px;
                     background-color: #fff;
                     border-radius: 8px;
                     position: absolute;
-                    top: 20px;
-                    left: 50%;
-                    transform: translatex(-50%);
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    transform: scale(0.9);
                     display: flex;
                     justify-content: center;
                     align-items: center;

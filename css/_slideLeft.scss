@@ -10,12 +10,9 @@
         height: 100%;
         width: 400px;
         background-color: #efefef;
-        position: fixed;
-        top: 0;
-        z-index: 999;
         padding: 100px 30px;
         transition: all 500ms ease 0s;
-        margin-left: 80%;
+        margin-left: auto;
         .closeDiv{
             position: absolute;
             top: 30px;
@@ -77,6 +74,7 @@
             }
             .icons:hover{
                 background-color: #155bd5;
+                border: 1px solid #155bd5;
             }
             .icons:hover a{
                 color: #fff;

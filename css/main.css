@@ -93,20 +93,20 @@ ul {
 .navSection .navbar {
   margin-left: 70px;
 }
-.navSection ul li {
+.navSection .nav-ul li {
   margin-left: 25px;
 }
-.navSection ul li a {
+.navSection .nav-ul li a {
   font-size: 1.1rem;
   font-weight: 500;
   color: rgba(224, 224, 224, 0.6784313725);
   margin-top: 9px;
   transition: all 0.2s ease 0s;
 }
-.navSection ul li a:hover {
+.navSection .nav-ul li a:hover {
   color: #fff;
 }
-.navSection ul li a.active {
+.navSection .nav-ul li .active {
   color: #fff;
 }
 .navSection .navCon {
@@ -226,12 +226,10 @@ ul {
   color: #2d2d2d;
   font-weight: 600;
 }
-.firstSection .twoDivs .tabs ul li a:hover {
-  color: #155bd5;
-}
-.firstSection .twoDivs .tabs ul li:hover,
-.firstSection .twoDivs .tabs ul li.active {
+.firstSection .twoDivs .tabs ul li:hover {
   background-color: #155bd5;
+}
+.firstSection .twoDivs .tabs ul li:hover a {
   color: #fff;
 }
 .firstSection .twoDivs .tabs p {
@@ -361,13 +359,14 @@ ul {
   display: block;
 }
 .fourthSection .container .workPositions .portfolioImage .overlay {
-  padding: 110px;
   background-color: #fff;
   border-radius: 8px;
   position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translatex(-50%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: scale(0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -711,9 +710,6 @@ ul {
   display: block;
   transition: all 0.5s ease 0s;
 }
-.ninethSection .threeDivs .image img:hover {
-  transform: scale(1.1);
-}
 .ninethSection .threeDivs .image .timNorton {
   width: 150px;
   height: 40px;
@@ -747,6 +743,9 @@ ul {
 .ninethSection .threeDivs p {
   padding: 0;
   margin-bottom: 0;
+}
+.ninethSection .threeDivs:hover img {
+  transform: scale(1.1);
 }
 
 .tenthSection {
@@ -865,6 +864,7 @@ ul {
   border: 1px solid #e0e0e0;
   transition: all 0.5s ease 0s;
   position: absolute;
+  background-color: #fff;
   top: 0;
 }
 .eleventhection .contactMain .contactForm h3 {
@@ -1006,12 +1006,9 @@ footer .container .subscribe form button {
   height: 100%;
   width: 400px;
   background-color: #efefef;
-  position: fixed;
-  top: 0;
-  z-index: 999;
   padding: 100px 30px;
   transition: all 500ms ease 0s;
-  margin-left: 80%;
+  margin-left: auto;
 }
 .slideLeft .rightSlide .closeDiv {
   position: absolute;
@@ -1074,6 +1071,7 @@ footer .container .subscribe form button {
 }
 .slideLeft .rightSlide .iconDiv .icons:hover {
   background-color: #155bd5;
+  border: 1px solid #155bd5;
 }
 .slideLeft .rightSlide .iconDiv .icons:hover a {
   color: #fff;

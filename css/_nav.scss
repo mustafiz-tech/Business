@@ -17,7 +17,7 @@
     .navbar{
         margin-left: 70px;
     }
-    ul li{
+    .nav-ul li{
         margin-left: 25px;
         a{
             font-size: 1.1rem;
@@ -29,9 +29,9 @@
         a:hover{
             color: #fff;
         }
-    }
-    ul li a.active{
-        color: #fff;
+        .active{
+            color: #fff;
+        }
     }
     .navCon{
         height: 40px;
