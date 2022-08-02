@@ -7,10 +7,6 @@
     h2{
         @extend %head2Extend;
     }
-    p{
-        @extend %paraExtend;
-        padding: 0 650px;
-    }
     .buttons{
         margin: 40px 0;
         position: relative;

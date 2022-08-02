@@ -46,12 +46,20 @@ ul {
   width: 32%;
 }
 
+.main-para {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  color: #6d6d6d;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
 .tenthSection, .ninethSection, .eightSection, .seventhSection, .sixthSection, .fifthSection, .fourthSection, .thirdSection, .secondSection {
   width: 100%;
   text-align: center;
 }
 
-.slideLeft .rightSlide p, footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactMain .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .fourthSection p, .thirdSection p, .secondSection p, .firstSection .twoDivs .tabs p {
+.slideLeft .rightSlide p, footer .container .fourDiv p, footer .container .fourDivsImg .making2, footer .container .fourDivsImg .making, .eleventhection .contactMain .contactForm p, .tenthSection p, .ninethSection p, .eightSection p, .seventhSection p, .sixthSection p, .fifthSection .headPara, .secondSection .threeDivs p, .firstSection .twoDivs .tabs p {
   color: #6d6d6d;
   font-size: 1.1rem;
   line-height: 1.6rem;
@@ -240,10 +248,6 @@ ul {
 .secondSection {
   padding: 70px 0;
 }
-.secondSection p {
-  padding: 0 650px;
-  margin-bottom: 30px;
-}
 .secondSection .container {
   flex-wrap: wrap;
 }
@@ -282,10 +286,6 @@ ul {
   background-color: #fafafa;
   padding: 70px 0;
 }
-.thirdSection p {
-  padding: 0 650px;
-  margin-bottom: 50px;
-}
 .thirdSection .container {
   position: relative;
 }
@@ -321,9 +321,6 @@ ul {
 
 .fourthSection {
   padding: 80px 0;
-}
-.fourthSection p {
-  padding: 0 650px;
 }
 .fourthSection .buttons {
   margin: 40px 0;

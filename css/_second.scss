@@ -7,11 +7,6 @@
     h2{
         @extend %head2Extend;
     }
-    p{
-        @extend %paraExtend;
-        padding: 0 650px;
-        margin-bottom: 30px;
-    }
     .container{
         flex-wrap: wrap;
     }
@@ -35,6 +30,7 @@
         }
         p{
             padding: 0;
+            @extend %paraExtend;
         }
         h3{
             font-size: 1.2rem;

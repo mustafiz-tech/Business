@@ -8,11 +8,6 @@
     h2{
         @extend %head2Extend;
     }
-    p{
-        @extend %paraExtend;
-        padding: 0 650px;
-        margin-bottom: 50px;
-    }
     .container{
         position: relative;
         .introImg{
